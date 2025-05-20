@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIM Info Terminal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-box" id="loginBox">
+    <h2>Login Required</h2>
+    <form id="loginForm">
+      <input type="text" placeholder="Username" id="username" required />
+      <input type="password" placeholder="Password" id="password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p class="contact-info">For login contact developer on WhatsApp<br><a href="https://wa.me/923285809899" target="_blank">📱 +923285809899</a></p>
+  </div>
+
+  <div class="terminal" id="mainApp" style="display:none;">
+    <h1>SIM DATA TERMINAL</h1>
+    <input type="text" id="input" placeholder="Enter Number or CNIC" />
+    <button id="searchBtn"><span class="blink">⏎</span> EXECUTE QUERY</button>
+    <div id="loader" class="loader"></div>
+    <div class="result-box">
+      <h3>📡 Search Result</h3>
+      <pre id="result"></pre>
+    </div>
+    <button id="copyBtn">📋 COPY RESULT</button>
+    <button id="clearBtn">❌ CLEAR RESULT</button>
+    <a id="shareBtn" target="_blank">📤 SHARE TO WHATSAPP</a>
+  </div>
+
+  <audio id="clickSound" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3"></audio>
+  <audio id="doneSound" src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
